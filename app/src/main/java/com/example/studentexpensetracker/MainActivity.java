@@ -2,6 +2,7 @@ package com.example.studentexpensetracker;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -115,4 +116,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void contactSupport(View view) {
+        // Phone number for assistance
+        String phonenumber = "+447516359566";
+
+        Intent dialIntent = new Intent(Intent.ACTION_DIAL);
+        dialIntent.setData(Uri.parse("tel:" + phonenumber));
+
+        startActivity(dialIntent);
+    }
 }

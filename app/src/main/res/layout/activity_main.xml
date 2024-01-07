@@ -77,6 +77,24 @@
                 android:text="Create an account"
                 android:padding="5dp" />
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:id="@+id/get_help"
+                android:clickable="true"
+                android:onClick="contactSupport"
+                android:text="Get Help"
+                android:layout_marginTop="25dp"
+                android:padding="5dp" />
+
+
+
+
+
+
+
         </LinearLayout>
     </ScrollView>
 
